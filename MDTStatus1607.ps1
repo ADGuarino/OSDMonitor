@@ -1,5 +1,7 @@
-﻿# Load Global Data from MDT Webservice
-$URL = "http://ENG-P-WIMAGE02:9801/MDTMonitorData/Computers"
+# Load Global Data from MDT Webservice
+
+ 
+$URL = "http://#EnterServerHere$:9801/MDTMonitorData/Computers"
 		
 		function GetMDTData {
 		  $Data = Invoke-RestMethod $URL
